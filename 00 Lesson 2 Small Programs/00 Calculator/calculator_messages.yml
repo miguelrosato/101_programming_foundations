@@ -1,0 +1,35 @@
+# This file will be used to setup all the messages in the calculator program. 
+
+en: 
+  welcome: "Welcome to Calculator!"
+  invalid_input: "Invalid Input. Please enter a number"
+  first_number: "Please introduce your First Number:"
+  second_number: "Please introduce your Second Number:"
+  operation: "Please select your operation: (+, -, *, /) "
+  invalid_operator: "Invalid Input. Please enter a valid operator (+, -, *, /):"
+  division_zero: "Divisions by Zero 0 are not allowed!!!"
+  number2_again: "Please enter second number again, different than 0: "
+  add: "Adding the two numbers..."
+  subtract: "Subtracting the two numbers..."
+  multiply: "Multiplying the two numbers..."
+  divide: "Dividing the two numbers..."
+  result: "The result is:"
+  restart: "Do you want to perform another calculation? (Y to loop again)"
+
+es: 
+  welcome: "Bienvenidos a la Calculadora!"
+  invalid_input: "El valor introducido no és valido. Por favor ingrese un número"
+  first_number: "Por favor introduzca el primer número:"
+  second_number: "Por favor introduzca el segundo número:"
+  operation: "Qué operación desea realizar?: (+, -, *, /) "
+  invalid_operator: "El operador introducido no és válido. Use uno de estos operadores (+, -, *, /):"
+  division_zero: "Las divisiones por cero no están permitidas!!!"
+  number2_again: "Por favor, ingrese de nuevo un segundo número, diferente de 0: "
+  add: "Sumando los dos números..."
+  subtract: "Restando los dos números..."
+  multiply: "Multiplicando los dos números..."
+  divide: "Dividiendo los dos números..."
+  result: "El Resultado es:"
+  restart: "Quieres realizar otro cálculo? (Y para empezar de nuevo)"
+
+

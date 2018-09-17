@@ -22,7 +22,7 @@ end
 loop do
   Kernel.puts("Please introduce your First Number:")
   number1 = Kernel.gets().chomp().to_f
-  break if number_1.is_a? Float
+  break if number1.is_a? Float
 
   puts "Invalid Input. Please enter a Number"
 end
