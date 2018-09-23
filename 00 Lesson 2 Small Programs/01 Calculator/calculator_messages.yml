@@ -32,4 +32,19 @@ es:
   result: "El Resultado es:"
   restart: "Quieres realizar otro cálculo? (Y para empezar de nuevo)"
 
+it: 
+  welcome: "Benvenuti nella Calcolatrice!"
+  invalid_input: "il numero inserito non è valido. Si prega d'inserire un numero"
+  first_number: "Inserisca il primo numero:"
+  second_number: "inserisca il secondo numero:"
+  operation: "Quale operazione desidera effettuare?: (+, -, *, /) "
+  invalid_operator: "L'operatore introdotto non eè valido. si prega di utilizzare i seguenti operatori (+, -, *, /):"
+  division_zero: "Non si puo dividere per Zero!!!"
+  number2_again: "Per favore, inserisca un numero diverso da 0: "
+  add: "Sommando i due numeri..."
+  subtract: "Sottraendo i due numeri..."
+  multiply: "Moltiplicando i due numeri..."
+  divide: "Dividendo i due numeri..."
+  result: "Il Risultato è:"
+  restart: "Vuoi effettuare un'altro calcolo? (Y per ricominciare)"
 

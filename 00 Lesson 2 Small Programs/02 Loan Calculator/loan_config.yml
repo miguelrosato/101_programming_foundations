@@ -1,0 +1,34 @@
+# Configuration file for the loan calculator
+
+en:
+  invalid_input: "Invalid Input. Please enter a Number"
+  welcome: "Welcome to the Loan Calculator!!!"
+  principal: "Please enter your total loan amount:"
+  year_interest: "Please enter the estimated annual interest (0 to 100%):"
+  years_to_repay: "Please enter the estimated number of years to repay:" 
+  calculating: "Calculating your monthly repayment..."
+  repayment_month: "Your Monthly repayment is: "
+  total_payment: "The total amount to be repaid is: "
+  restart: "Do you want to perform another calculation? (Y to restart)"
+
+es:
+  invalid_input: "El valor introducido no és válido. Por favor ingrese un número"
+  welcome: "Bienvenido al Calculador de Hipotecas"
+  principal: "Por favor ingrese el monto total a hipotecar:"
+  year_interest: "Por favor ingrese el porcentaje anual estimado (0 a 100%):"
+  years_to_repay: "Por favor, indique el número de años a pagar:" 
+  calculating: "Calculando su pago mensual..."
+  repayment_month: "Su pago mensual estimado es: "
+  total_payment: "La suma total a pagar es: "
+  restart: "Desea realizar otro cálculo? (Y para volver a empezar)"
+
+it:
+  invalid_input: "il numero inserito non è valido. Si prega d'inserire un numero"
+  welcome: "Benvenuti nel Calcolatore di Mutui"
+  principal: "Inserisca il monto totale del mutuo:"
+  year_interest: "Inserisca la percentuale annuale d'interesse (0 a 100%):"
+  years_to_repay: "Inserisca il numero di anni per ripagare:" 
+  calculating: "Calcolando le sue rate mensili..."
+  repayment_month: "La sua rata mensile è di: "
+  total_payment: "L'ammontare totale da pagare è: "
+  restart: "Vuole fare un altro calcolo? (Y per ricominciare)"
