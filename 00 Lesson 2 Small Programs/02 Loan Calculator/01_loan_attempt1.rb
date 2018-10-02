@@ -39,7 +39,7 @@ end
 def input_number(num)
   loop do
     num = Kernel.gets().chomp()
-    break if valid_number?(num) 
+    break if valid_number?(num)
 
     prompt("invalid_input")
   end

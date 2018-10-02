@@ -33,12 +33,11 @@ end
 
 prompt("welcome")
 
-loop do   #This is the main loop to restart the program on user input
+loop do   # This is the main loop to restart the program on user input
   prompt("first_number")
   number1 = input_number(number1)
   prompt("second_number")
   number2 = input_number(number2)
-
 
   loop do
     prompt("operation")
