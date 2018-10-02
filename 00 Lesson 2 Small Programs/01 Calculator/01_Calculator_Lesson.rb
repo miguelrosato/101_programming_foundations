@@ -4,35 +4,33 @@
 # perform the operation on the two numbers
 # output the result
 
-#answer = gets 
-#puts answer
+# answer = gets 
+# puts answer
 
-# other nomenclature 
+# Other nomenclature 
 
-#answer = gets()
-#puts(answer)
+# answer = gets()
+# puts(answer)
 
-# final Nomenclature. The one we use:
+# LS Nomenclature. The one we use:
 
-#Answer = Kernel.gets()
-#Kernel.puts(answer)
-
+# Answer = Kernel.gets()
+# Kernel.puts(answer)
 
 Kernel.puts("Welcome to Calculator!")
 
 Kernel.puts("What's the first number?")
 number1 = Kernel.gets().chomp()
 
-#Kernel.puts(number1.inspect)
-#Kernel.puts("The Number is: " + number1 + "!")
-
+# Kernel.puts(number1.inspect)
+# Kernel.puts("The Number is: " + number1 + "!")
 
 Kernel.puts("What's the second number?")
 number2 = Kernel.gets().chomp()
 
 # Kernel.puts(number1 + " " + number2)
 
-Kernel.puts ("What Operation would you like to perform? 1) add 2) substract 3) multiply 4) divide")
+Kernel.puts("What Operation would you like to perform? 1) add 2) substract 3) multiply 4) divide")
 operator = Kernel.gets().chomp()
 
 if operator == '1'

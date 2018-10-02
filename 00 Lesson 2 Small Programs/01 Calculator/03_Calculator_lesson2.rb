@@ -80,7 +80,7 @@ loop do   #This is the main loop to restart the program on user input
   operator = ""
   loop do 
     operator = Kernel.gets().chomp()
-    if %w(1 2 3 4).include?(operator)
+    if %w[1 2 3 4].include?(operator)
       break
     else
       prompt("Must choose 1, 2, 3 or 4")

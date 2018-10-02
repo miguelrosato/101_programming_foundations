@@ -3,7 +3,7 @@ number2 = nil
 operator = " "
 
 def prompt(message)
-  puts "=> #{message}"
+  Kernel.puts("=> #{message}")
 end
 
 def valid_number?(num)
@@ -21,7 +21,7 @@ end
 
 def input_number(num)
   loop do
-    num = gets.chomp
+    num = Kernel.gets().chomp()
     break if valid_number?(num) 
 
     prompt("Invalid Input. Please enter a Number")
@@ -42,7 +42,7 @@ loop do   #This is the main loop to restart the program on user input
 
   loop do
     prompt("Please select your operation: (+, -, *, /) ")
-    operator = gets.chomp
+    operator = Kernel.gets().chomp()
     break if %w[+ - * /].include?(operator)
 
     prompt("Invalid Input. Please enter a valid operator (+, -, *, /):")
@@ -77,7 +77,6 @@ loop do   #This is the main loop to restart the program on user input
   prompt("The result is #{result}")
 
   prompt("Do you want to perform another calculation? (Y to loop again)")
-    answer = Kernel.gets().chomp()
-    break unless answer.downcase().start_with?("y")
-
+  answer = Kernel.gets().chomp()
+  break unless answer.downcase().start_with?("y")
 end

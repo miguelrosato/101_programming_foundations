@@ -4,11 +4,11 @@ number2 = nil
 operator = " "
 
 def calculator(num1, num2, opr)
-  case
-  when opr == "+" then num1 + num2
-  when opr == "-" then num1 - num2
-  when opr == "*" then num1 * num2
-  when opr == "/"
+  case opr
+  when "+" then num1 + num2
+  when "-" then num1 - num2
+  when "*" then num1 * num2
+  when "/"
     if num2.zero?
       Kernel.puts("Divisions by Zero 0 are not allowed!!!")
     else
@@ -28,7 +28,7 @@ loop do
 end
 
 loop do
-  Kernel.puts ("Please introduce your Second Number:")
+  Kernel.puts("Please introduce your Second Number:")
   number2 = Kernel.gets().chomp().to_f
   break if number2.is_a? Float
 

@@ -5,7 +5,7 @@ number2 = nil
 operator = " "
 
 def prompt(message)
-  puts "=> #{message}"
+  Kernel.puts("=> #{message}")
 end
 
 def valid_number?(num)
@@ -24,11 +24,11 @@ end
 
 prompt("Welcome to Calculator Ruby App!!!")
 
-loop do   #This is the main loop to restart the program on user input
+loop do   # This is the main loop to restart the program on user input
 
   loop do
     prompt("Please introduce your First Number:")
-    number1 = gets.chomp
+    number1 = Kernel.gets().chomp()
     break if valid_number?(number1) 
 
     prompt("Invalid Input. Please enter a Number")
@@ -38,7 +38,7 @@ loop do   #This is the main loop to restart the program on user input
 
   loop do
     prompt("Please introduce your Second Number:")
-    number2 = gets.chomp
+    number2 = Kernel.gets().chomp()
     break if valid_number?(number2)
 
     prompt("Invalid Input. Please enter a Number")
@@ -47,7 +47,7 @@ loop do   #This is the main loop to restart the program on user input
 
   loop do
     prompt("Please select your operation: (+, -, *, /) ")
-    operator = gets.chomp
+    operator = Kernel.gets().chomp()
     break if %w[+ - * /].include?(operator)
 
     prompt("Invalid Input. Please enter a valid operator (+, -, *, /):")
@@ -67,7 +67,7 @@ loop do   #This is the main loop to restart the program on user input
         prompt("Divisions by Zero 0 are not allowed!!!")
         loop do
           prompt("Please enter Number2 Again: ")
-          number2 = gets.chomp
+          number2 = Kernel.gets().chomp()
           break if valid_number?(number2)
 
           prompt("Invalid Input. Please enter a Number different than 0")
@@ -84,7 +84,6 @@ loop do   #This is the main loop to restart the program on user input
   prompt("The result is #{result}")
 
   prompt("Do you want to perform another calculation? (Y to loop again)")
-    answer = Kernel.gets().chomp()
-    break unless answer.downcase().start_with?("y")
-
+  answer = Kernel.gets().chomp()
+  break unless answer.downcase().start_with?("y")
 end

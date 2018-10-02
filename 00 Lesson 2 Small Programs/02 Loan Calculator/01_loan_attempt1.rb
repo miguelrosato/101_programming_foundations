@@ -18,14 +18,14 @@ monthly_payment = nil
 # a line.
 def prompt(key)
   message = messages(key, LANGUAGE)
-  puts "=> #{message}"
+  Kernel.puts("=> #{message}")
 end
 
 # The next method puts the string from .yml in the required language and keep
 # the line to add more data (numbers)
 def printer(key)
   message = messages(key, LANGUAGE)
-  print "=> #{message}"
+  Kernel.print("=> #{message}")
 end
 
 # The following method applies REGEX to validate a number
@@ -38,7 +38,7 @@ end
 # validates it.
 def input_number(num)
   loop do
-    num = gets.chomp
+    num = Kernel.gets().chomp()
     break if valid_number?(num) 
 
     prompt("invalid_input")
@@ -84,12 +84,12 @@ loop do # Main Loop that allows to repeat loan calculation
 
   prompt("calculating")
   printer("repayment_month")
-  puts monthly_payment.round(2)
+  Kernel.puts(monthly_payment.round(2))
 
   printer("total_payment")
   Kernel.puts((monthly_payment * number_months).round(2))
 
   prompt("restart")
-  answer = gets.chomp
+  answer = Kernel.gets().chomp()
   break unless answer.downcase.start_with?("y")
 end

@@ -13,7 +13,7 @@ operator = " "
 
 def prompt(key)
   message = messages(key, LANGUAGE)
-  puts "=> #{message}"
+  Kernel.puts("=> #{message}")
 end
 
 def valid_number?(num)
@@ -23,7 +23,7 @@ end
 
 def input_number(num)
   loop do
-    num = gets.chomp
+    num = Kernel.gets().chomp()
     break if valid_number?(num) 
 
     prompt("invalid_input")
@@ -76,9 +76,9 @@ loop do   #This is the main loop to restart the program on user input
   end
 
   prompt('result')
-  puts "=> #{result}"
+  Kernel.puts("=> #{result}")
 
   prompt("restart")
-  answer = gets.chomp
+  answer = Kernel.gets().chomp()
   break unless answer.downcase.start_with?("y")
 end
