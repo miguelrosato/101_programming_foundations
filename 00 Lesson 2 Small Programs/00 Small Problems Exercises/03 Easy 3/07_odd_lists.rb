@@ -21,8 +21,10 @@ end
 
 def oddities2(arr)
   arr2 = []
-  arr2 = arr.select { |ind| arr2 << arr[ind] if ind.odd? }
+  arr2 = arr.select.with_index { |_val, idx| arr2 << arr[idx] if idx.even? }
 end
 p oddities([1, 2, 3, 4, 5, 6])
 p oddities2([1, 2, 3, 4, 5, 6])
+p oddities2(["a", "b", "c", "d", "e"])
+p oddities2([true, false, true, false, true, false, true, false])
 
