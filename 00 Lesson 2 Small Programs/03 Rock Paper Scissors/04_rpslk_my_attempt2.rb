@@ -6,10 +6,10 @@ VALID_CHOICES = %w(rock paper scissors lizard spock).freeze
 
 RULES = {
   "rock" => %w(lizard scissors),
-  "paper" => %(spock rock),
-  "scissors" => %(paper lizard),
-  "lizard" => %(spock paper),
-  "spock" => %(rock scissors)
+  "paper" => %w(spock rock),
+  "scissors" => %w(paper lizard),
+  "lizard" => %w(spock paper),
+  "spock" => %w(rock scissors)
 }.freeze
 
 ABBREVIATIONS = {
@@ -41,7 +41,7 @@ end
 def clear_screen
   system("clear") || system("cls")
 end
-clear_screen
+clear_screen()
 prompt("Welcompe to Rock, Paper, Scissors, Lizard, Spock")
 prompt("Every win gives a point. The first to get #{NUMBER_OF_PLAYS} points wins the game!!!")
 

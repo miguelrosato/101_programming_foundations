@@ -31,6 +31,21 @@ def input_number(num)
   num
 end
 
+def valid_operator?(str)
+  str.to_s unless str.is_a? String
+  /\A[\+\-\*\/]\z/.match str
+end
+
+def input_operator(str)
+  loop do 
+    str = gets.chomp
+    break if valid_operator?(str)
+
+    puts "Invalid operator. Please try again"
+  end
+  str
+end
+
 prompt("welcome")
 
 loop do   # This is the main loop to restart the program on user input
@@ -39,13 +54,8 @@ loop do   # This is the main loop to restart the program on user input
   prompt("second_number")
   number2 = input_number(number2)
 
-  loop do
-    prompt("operation")
-    operator = gets.chomp
-    break if %w[+ - * /].include?(operator)
-
-    prompt("invalid_operator")
-  end
+  prompt("operation")
+  operator = input_operator(operator)
 
   case operator
   when "+"

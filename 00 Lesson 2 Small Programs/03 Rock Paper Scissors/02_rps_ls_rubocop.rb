@@ -1,6 +1,6 @@
 # Rock Paper Scissors Walk through lesson
 
-VALID_CHOICES = %w[rock paper scissors].freeze
+VALID_CHOICES = %w(rock paper scissors).freeze
 
 def prompt(message)
   Kernel.puts("=> #{message}")
