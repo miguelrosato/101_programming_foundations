@@ -1,4 +1,4 @@
-# 101 Programming Foundations. Small Problems Exercises. 01 Method Repeat 
+cd # 101 Programming Foundations. Small Problems Exercises. 01 Method Repeat 
 # Integer.
 
 # Write a method that takes two arguments, a string and a positive integer, 
@@ -12,3 +12,4 @@ my_string = "Hello Miguel Rosato!!!"
 my_integer = 6
 
 repeat(my_string, my_integer)
+
