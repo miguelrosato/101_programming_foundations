@@ -24,11 +24,11 @@ penultimate('Launch School is great!') == 'is'
 
 ## Data. Data Structure
 
-We could use the split method with the space as reference, in order to obtain an array. From that array we yus need to puts the penultimate element of the array array[-2]  
+We could use the split method with the space as reference, in order to obtain an array. From that array we just need to puts the penultimate element of the array using the negative index array[-2]  
  
 
 ## Algorithm:
 
-in the 09_multiply_all_pairs.rb file
+in the 10_end_near.rb file
 
 ## Abstraction:
