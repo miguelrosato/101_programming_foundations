@@ -1,6 +1,6 @@
 # Small Problems Exercises. Medium 1.
 
-## 8.- Word to Digit 
+## 10.- Last Digit Fibonacci 
 
 ## Problem Enunciate
 
