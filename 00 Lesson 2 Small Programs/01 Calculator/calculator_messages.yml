@@ -1,6 +1,6 @@
-# This file will be used to setup all the messages in the calculator program. 
+# This file will be used to setup all the messages in the calculator program.
 
-en: 
+en:
   welcome: "Welcome to Calculator!"
   invalid_input: "Invalid Input. Please enter a number"
   first_number: "Please introduce your First Number:"
@@ -16,7 +16,7 @@ en:
   result: "The result is:"
   restart: "Do you want to perform another calculation? (Y to loop again)"
 
-es: 
+es:
   welcome: "Bienvenidos a la Calculadora!"
   invalid_input: "El valor introducido no és valido. Por favor ingrese un número"
   first_number: "Por favor introduzca el primer número:"
